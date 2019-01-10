@@ -1,0 +1,57 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body {
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+  position: relative;
+}
+
+h1 {
+  color: black;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 30%;
+  transform: translate(0, -50%);
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: .5s;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: .5s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@-webkit-keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}

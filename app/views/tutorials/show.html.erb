@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  	<title>Hello</title>
+    <%= stylesheet_link_tag "tutorials" %>
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet"> 
+  </head>
+  <body>
+    <div id="top">
+      <%= link_to "<-", tutorial_path(@tutorial.id - 1), class: "arrowWrapper", id: "leftArrow" %>
+      <%= link_to "->", tutorial_path(@tutorial.id + 1), class: "arrowWrapper", id: "rightArrow" %>
+    	<h1 id="title">
+    		<%= @tutorial.title %>
+    	</h1>
+      <div id="run" onclick="runCode()">
+        Run code
+      </div>
+      <div id="spacer"></div>
+    </div>
+
+    <div id="main">
+      <div id="left">
+      	<p id="explanation">
+      		<%= @tutorial.explanation.html_safe %>
+        </p>
+      </div>
+        <textarea id="code"
+        placeholder="Type your code here"><%= @tutorial.code %></textarea>
+      </div>
+    </div>
+
+    <div id="output">
+      <div id="caret">
+        >
+      </div>
+      <div id="outputText"><%= @tutorial.id + 1%></div>
+    </div>
+
+  </body>
+ </html>
