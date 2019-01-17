@@ -1,0 +1,15 @@
+current directory: /home/pi/techTeamProject/vendor/bundle/ruby/2.6.0/gems/bindex-0.5.0/ext/bindex
+/home/pi/.rvm/rubies/ruby-2.6.0/bin/ruby -I /home/pi/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0 -r ./siteconf20190113-11182-1krh5s7.rb extconf.rb
+creating Makefile
+
+current directory: /home/pi/techTeamProject/vendor/bundle/ruby/2.6.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /home/pi/techTeamProject/vendor/bundle/ruby/2.6.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.so
+
+current directory: /home/pi/techTeamProject/vendor/bundle/ruby/2.6.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20190113-11182-1rq9f5k/bindex
