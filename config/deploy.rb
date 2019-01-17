@@ -1,7 +1,7 @@
 # Change these
-server 'server', port: 80, roles: [:web, :app, :db], primary: true
+server '192.168.1.100', port: 22, roles: [:web, :app, :db], primary: true
 
-set :repo_url,        'https://github.com/CharOverflowError/techTeamProject.git'
+set :repo_url,        'git@github.com:CharOverflowError/techTeamProject.git'
 set :application,     'techTeamProject'
 set :user,            'pi'
 set :puma_threads,    [4, 16]

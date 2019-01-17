@@ -68,3 +68,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Add authentication capabilities
 gem 'devise'
+
+gem 'bundle'
+
+gem 'capistrano'
+
